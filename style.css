@@ -1,0 +1,36 @@
+/* Sidebar & Hamburger[cite: 4] */
+.side-nav {
+    height: 100%; width: 0; position: fixed; z-index: 2000; top: 0; left: 0;
+    background-color: #111; overflow-x: hidden; transition: 0.5s; padding-top: 60px;
+}
+.side-nav a { padding: 15px 32px; text-decoration: none; font-size: 20px; color: #818181; display: block; }
+#hamburger { font-size: 30px; cursor: pointer; position: fixed; top: 15px; left: 15px; z-index: 1500; background: white; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+.install-btn { background: #007bff; color: white; border: none; margin: 20px 32px; padding: 12px; border-radius: 8px; width: 80%; cursor: pointer; }
+
+/* Overlay Sections[cite: 4] */
+.overlay-section { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; z-index: 2500; padding: 40px; overflow-y: auto; }
+.back-btn { padding: 10px 20px; background: #333; color: white; border-radius: 5px; border: none; cursor: pointer; }
+
+/* Pulse Tracker Layout[cite: 4] */
+.logo-header { text-align: center; padding: 20px 0; }
+.main-logo { max-width: 200px; height: auto; border-radius: 10px; }
+body { font-family: 'Segoe UI', sans-serif; background: #f8f9fa; color: #333; padding: 20px; }
+.container { max-width: 600px; margin: 0 auto; text-align: center; }
+.video-container { position: relative; width: 100%; height: 350px; background: #000; border-radius: 15px; overflow: hidden; border: 4px solid #fff; margin-bottom: 20px; }
+#output { width: 100%; height: 100%; object-fit: cover; }
+
+.pulse-display { background: linear-gradient(135deg, #e94560, #0f3460); padding: 30px; border-radius: 15px; color: white; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.pulse-value { font-size: 80px; font-weight: bold; line-height: 1; }
+.chart-container { background: #000; border-radius: 10px; padding: 10px; margin-bottom: 20px; }
+#pulseChart { width: 100%; height: 120px; }
+
+.stats { display: flex; gap: 10px; margin-bottom: 20px; }
+.stat-box { flex: 1; background: white; padding: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.stat-label { display: block; font-size: 11px; color: #777; text-transform: uppercase; }
+.stat-value { font-weight: bold; font-size: 14px; }
+
+button { padding: 15px 30px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+#startBtn { background: #28a745; color: white; width: 100%; font-size: 18px; }
+#startBtn:disabled { background: #ccc; cursor: not-allowed; }
+#stopBtn { background: #dc3545; color: white; width: 100%; font-size: 18px; }
+#resetBtn { background: #6c757d; color: white; margin-top: 10px; }
